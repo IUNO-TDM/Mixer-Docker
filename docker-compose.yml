@@ -4,11 +4,19 @@ services:
     build: payment
     ports:
       - "8080:8080"
-  pump:
-    build: pump
-    ports:
-      - "9002:9002"
-  mixer:
-    build: mixer
-    ports:
-      - "3000"
+    volumes:
+          - m2-repo:/root/.m2
+          - wallet:/root/.PaymentService
+#  pump:
+#    build: pump
+#    ports:
+#      - "9002:9002"
+#  mixer:
+#    build: mixer
+#    ports:
+#      - "3000"
+
+
+volumes:
+  m2-repo:
+  wallet:
