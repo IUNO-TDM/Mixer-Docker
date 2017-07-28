@@ -1,0 +1,9 @@
+[submodule "mixer/MixerControl"]
+	path = mixer/MixerControl
+	url = git@github.com:IUNO-TDM/MixerControl.git
+[submodule "payment/PaymentService"]
+	path = payment/PaymentService
+	url = git@github.com:IUNO-TDM/PaymentService.git
+[submodule "pump/PumpControl"]
+	path = pump/PumpControl
+	url = git@github.com:IUNO-TDM/PumpControl.git

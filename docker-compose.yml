@@ -1,0 +1,14 @@
+version: "3.0"
+services:
+  payment:
+    build: payment
+    ports:
+      - "8080:8080"
+  pump:
+    build: pump
+    ports:
+      - "9002:9002"
+  mixer:
+    build: mixer
+    ports:
+      - "3000"
