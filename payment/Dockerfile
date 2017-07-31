@@ -19,4 +19,28 @@ RUN mvn verify
 
 EXPOSE 8080
 
-CMD mvn jetty:run
+CMD mvn jetty:run -Dlistening-interface=0.0.0.0
+
+
+#FROM maven:latest
+#RUN mkdir /PaymentService
+#COPY PaymentService /PaymentService
+#WORKDIR PaymentService
+#RUN mvn clean package
+#EXPOSE 8080
+#CMD ["mvn","jetty:run"]
+
+
+#FROM maven:latest
+#RUN git clone https://github.com/IUNO-TDM/PaymentService.git
+#WORKDIR PaymentService
+#RUN mvn clean package
+#EXPOSE 8080
+#CMD ["mvn","jetty:run"]
+
+#FROM maven:latest
+#RUN git clone https://github.com/goergch/PaymentService.git
+#WORKDIR PaymentService
+#RUN mvn clean package
+#EXPOSE 8080
+#CMD ["mvn","jetty:run"]
