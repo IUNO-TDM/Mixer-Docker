@@ -12,13 +12,23 @@ self.DATABASE_NAME = 'MIXERCONTROL_DB';
 self.LOG_LEVEL = 'debug';
 self.HOST_SETTINGS = {
     JUICE_MACHINE_SERVICE: {
-        HOST: 'localhost',
+        HOST: 'jms',
         PORT: 3001,
         PROTOCOL: 'http'
     },
     OAUTH_SERVER: {
-        HOST: 'localhost',
+        HOST: 'auth',
         PORT: 3005,
+        PROTOCOL: 'http'
+    },
+    PAYMENT_SERVICE: {
+        HOST: 'payment',
+        PORT: 8080,
+        PROTOCOL: 'http'
+    },
+    PUMP_CONTROL: {
+        HOST: 'pump',
+        PORT: 9002,
         PROTOCOL: 'http'
     }
 };
@@ -37,7 +47,7 @@ self.STD_INGREDIENT_CONFIGURATION = [
 ];
 
 self.OAUTH_CREDENTIALS = {
-    CLIENT_ID: 'cdb4c297-45bd-437e-ac90-9179eea41730',
+    CLIENT_ID: 'adb4c297-45bd-437e-ac90-9179eea41746',
     CLIENT_SECRET: 'IsSecret'
 };
 

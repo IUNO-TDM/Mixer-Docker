@@ -12,12 +12,17 @@ services:
     ports:
       - "9002:9002"
     tty: true
-#  mixer:
-#    build: mixer
-#    ports:
-#      - "3000:3000"
+  mixer:
+    build: mixer
+    ports:
+      - "3000:3000"
 
 
 volumes:
   m2-repo:
   wallet:
+
+networks:
+  default:
+    external:
+      name: iuno-network
