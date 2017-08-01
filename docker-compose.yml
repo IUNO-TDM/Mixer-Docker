@@ -1,6 +1,6 @@
 version: "3.0"
 services:
-  payment:
+  payment_mixer:
     build: payment
     ports:
       - "8080:8080"

@@ -9,7 +9,7 @@ var self = {};
 // ---- CONFIGURATION EXPORT ----
 
 self.DATABASE_NAME = 'MIXERCONTROL_DB';
-self.LOG_LEVEL = 'debug';
+self.LOG_LEVEL = 'info';
 self.HOST_SETTINGS = {
     JUICE_MACHINE_SERVICE: {
         HOST: 'jms',
@@ -22,7 +22,7 @@ self.HOST_SETTINGS = {
         PROTOCOL: 'http'
     },
     PAYMENT_SERVICE: {
-        HOST: 'payment',
+        HOST: 'payment_mixer',
         PORT: 8080,
         PROTOCOL: 'http'
     },
