@@ -16,3 +16,10 @@ git submodule update --remote --merge
 docker network create iuno-network
 docker-compose up
 ```
+
+# Custom Configs
+
+Each module has config files under {module_name}/config (example: auth/config/docker_config.js)
+Those files define host settings, oauth-credentials and more.
+You can either adjust config parameters directly in those files or you can add your own configuration file in the same directory.
+After adding your custom_config.js you'll have to update the ENV-Variable (TDM_{module_name}_CONFIG with in the Dockerfile of the targeted module.
