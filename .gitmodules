@@ -9,4 +9,4 @@
 [submodule "pump/PumpControl"]
 	path = pump/PumpControl
 	url = https://github.com/IUNO-TDM/PumpControl.git
-	branch = master
+	branch = stable
