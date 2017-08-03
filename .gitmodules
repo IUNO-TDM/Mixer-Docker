@@ -1,7 +1,7 @@
 [submodule "mixer/MixerControl"]
 	path = mixer/MixerControl
 	url = https://github.com/IUNO-TDM/MixerControl.git
-	branch = dev
+	branch = testing
 [submodule "payment/PaymentService"]
 	path = payment/PaymentService
 	url = https://github.com/IUNO-TDM/PaymentService.git
