@@ -12,7 +12,7 @@ Following software is needed:
 git clone https://github.com/IUNO-TDM/Mixer-Docker.git
 cd Mixer-Docker
 git submodule init
-git submodule update --remote --merge
+git submodule update
 docker network create iuno-network
 docker-compose up
 ```
