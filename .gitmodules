@@ -5,7 +5,7 @@
 [submodule "payment/PaymentService"]
 	path = payment/PaymentService
 	url = https://github.com/IUNO-TDM/PaymentService.git
-	branch = master
+	branch = testing
 [submodule "pump/PumpControl"]
 	path = pump/PumpControl
 	url = https://github.com/IUNO-TDM/PumpControl.git
