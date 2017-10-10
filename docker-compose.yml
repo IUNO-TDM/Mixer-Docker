@@ -6,17 +6,16 @@ services:
       - "8080:8080"
     volumes:
           - m2-repo:/root/.m2
-          - wallet:/root/.PaymentService
-  pump:
-    build: pump
-    ports:
-      - "9002:9002"
-    tty: true
+          - wallet:/root/.PaymentServicecd
+#  pump:
+#    build: pump
+#    ports:
+#      - "9002:9002"
+#    tty: true
   mixer:
     build: mixer
     ports:
       - "3000:3000"
-
 
 volumes:
   m2-repo:

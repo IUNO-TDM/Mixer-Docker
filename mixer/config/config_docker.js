@@ -30,12 +30,16 @@ self.HOST_SETTINGS = {
         HOST: 'pump',
         PORT: 9002,
         PROTOCOL: 'http'
+    },
+    LICENSE_MANAGER: {
+        HOST: 'license_manager',
+        PORT: 11432,
+        PROTOCOL: 'http'
     }
 };
 
 // ---- INGREDIENT CONFIGURATION ----
 self.STD_INGREDIENT_CONFIGURATION = [
-    "8f0bc514-7219-46d2-999d-c45c930c3e7c",
     '570a5df0-a044-4e22-b6e6-b10af872d75c',
     '198f1571-4846-4467-967a-00427ab0208d',
     'f6d361a9-5a6f-42ad-bff7-0913750809e4',
