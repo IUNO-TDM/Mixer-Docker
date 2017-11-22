@@ -12,10 +12,11 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 COPY PumpControl /usr/src/app
+COPY config/ /root/
 
-RUN make
+RUN make ENCRYPTION=off REALDRIVERS=off
 
-CMD cd build && ./pumpcontrol.out --simulation=true
+CMD cd build && ./pumpcontrol.out --driver=simulation
 
 EXPOSE 9002
 

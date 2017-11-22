@@ -7,11 +7,11 @@ services:
     volumes:
           - m2-repo:/root/.m2
           - wallet:/root/.PaymentServicecd
-#  pump:
-#    build: pump
-#    ports:
-#      - "9002:9002"
-#    tty: true
+  pump:
+    build: pump
+    ports:
+      - "9002:9002"
+    tty: true
   mixer:
     build: mixer
     ports:
