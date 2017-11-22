@@ -23,3 +23,5 @@ Each module has config files under {module_name}/config (example: auth/config/do
 Those files define host settings, oauth-credentials and more.
 You can either adjust config parameters directly in those files or you can add your own configuration file in the same directory.
 After adding your custom_config.js you'll have to update the ENV-Variable (TDM_{module_name}_CONFIG with in the Dockerfile of the targeted module.
+
+The default configuration works straight with the TDM-Docker (https://github.com/IUNO-TDM/TDM-Docker) environment.
