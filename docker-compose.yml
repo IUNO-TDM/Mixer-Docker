@@ -5,7 +5,7 @@ services:
     ports:
       - "8080:8080"
     volumes:
-          - m2-repo:/root/.m2
+          - m2-repo:/root/.m2dock
           - wallet:/root/.PaymentServicecd
   pump:
     build: pump
